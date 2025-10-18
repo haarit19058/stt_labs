@@ -1,0 +1,9 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+NOT REGULAR FILE
+Total lines analyzed: 0
+Total time 0.000044 seconds
+0 lines per second

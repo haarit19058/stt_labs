@@ -1,0 +1,6 @@
+projectKey=ggml
+serverUrl=http://localhost:9000
+serverVersion=25.9.0.112764
+dashboardUrl=http://localhost:9000/dashboard?id=ggml
+ceTaskId=972d6ef4-1511-435c-87e6-bcaffb23636d
+ceTaskUrl=http://localhost:9000/api/ce/task?id=972d6ef4-1511-435c-87e6-bcaffb23636d

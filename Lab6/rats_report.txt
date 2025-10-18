@@ -1,0 +1,537 @@
+Entries in perl database: 33
+Entries in ruby database: 46
+Entries in python database: 62
+Entries in c database: 334
+Entries in php database: 55
+Analyzing ./ggml/examples/common-ggml.cpp
+Analyzing ./ggml/examples/common.cpp
+Analyzing ./ggml/examples/gpt-2/main-alloc.cpp
+Analyzing ./ggml/examples/gpt-2/main-backend.cpp
+Analyzing ./ggml/examples/gpt-2/main-batched.cpp
+Analyzing ./ggml/examples/gpt-2/main-ctx.cpp
+Analyzing ./ggml/examples/gpt-2/main-sched.cpp
+Analyzing ./ggml/examples/gpt-2/quantize.cpp
+Analyzing ./ggml/examples/gpt-j/main.cpp
+Analyzing ./ggml/examples/gpt-j/quantize.cpp
+Analyzing ./ggml/examples/magika/main.cpp
+Analyzing ./ggml/examples/mnist/mnist-common.cpp
+Analyzing ./ggml/examples/mnist/mnist-eval.cpp
+Analyzing ./ggml/examples/mnist/mnist-train.cpp
+Analyzing ./ggml/examples/perf-metal/perf-metal.cpp
+Analyzing ./ggml/examples/sam/sam.cpp
+Analyzing ./ggml/examples/simple/simple-backend.cpp
+Analyzing ./ggml/examples/simple/simple-ctx.cpp
+Analyzing ./ggml/examples/test-cmake/test-cmake.cpp
+Analyzing ./ggml/examples/yolo/yolo-image.cpp
+Analyzing ./ggml/examples/yolo/yolov3-tiny.cpp
+Analyzing ./ggml/src/ggml-alloc.c
+Analyzing ./ggml/src/ggml-backend-reg.cpp
+Analyzing ./ggml/src/ggml-backend.cpp
+Analyzing ./ggml/src/ggml-blas/ggml-blas.cpp
+Analyzing ./ggml/src/ggml-cann/aclnn_ops.cpp
+Analyzing ./ggml/src/ggml-cann/acl_tensor.cpp
+Analyzing ./ggml/src/ggml-cann/ggml-cann.cpp
+Analyzing ./ggml/src/ggml-cpu/amx/amx.cpp
+Analyzing ./ggml/src/ggml-cpu/amx/mmq.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/arm/cpu-feats.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/arm/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/arm/repack.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/loongarch/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/powerpc/cpu-feats.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/powerpc/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/riscv/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/riscv/repack.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/s390/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/wasm/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp
+Analyzing ./ggml/src/ggml-cpu/arch/x86/quants.c
+Analyzing ./ggml/src/ggml-cpu/arch/x86/repack.cpp
+Analyzing ./ggml/src/ggml-cpu/binary-ops.cpp
+Analyzing ./ggml/src/ggml-cpu/ggml-cpu.c
+Analyzing ./ggml/src/ggml-cpu/ggml-cpu.cpp
+Analyzing ./ggml/src/ggml-cpu/hbm.cpp
+Analyzing ./ggml/src/ggml-cpu/kleidiai/kernels.cpp
+Analyzing ./ggml/src/ggml-cpu/kleidiai/kleidiai.cpp
+Analyzing ./ggml/src/ggml-cpu/llamafile/sgemm.cpp
+Analyzing ./ggml/src/ggml-cpu/ops.cpp
+Analyzing ./ggml/src/ggml-cpu/quants.c
+Analyzing ./ggml/src/ggml-cpu/repack.cpp
+Analyzing ./ggml/src/ggml-cpu/spacemit/ime.cpp
+Analyzing ./ggml/src/ggml-cpu/spacemit/ime1_kernels.cpp
+Analyzing ./ggml/src/ggml-cpu/traits.cpp
+Analyzing ./ggml/src/ggml-cpu/unary-ops.cpp
+Analyzing ./ggml/src/ggml-cpu/vec.cpp
+Analyzing ./ggml/src/ggml-metal/ggml-metal-common.cpp
+Analyzing ./ggml/src/ggml-metal/ggml-metal-device.cpp
+Analyzing ./ggml/src/ggml-metal/ggml-metal-ops.cpp
+Analyzing ./ggml/src/ggml-metal/ggml-metal.cpp
+Analyzing ./ggml/src/ggml-opencl/ggml-opencl.cpp
+Analyzing ./ggml/src/ggml-opt.cpp
+Analyzing ./ggml/src/ggml-quants.c
+Analyzing ./ggml/src/ggml-rpc/ggml-rpc.cpp
+Analyzing ./ggml/src/ggml-sycl/binbcast.cpp
+Analyzing ./ggml/src/ggml-sycl/common.cpp
+Analyzing ./ggml/src/ggml-sycl/concat.cpp
+Analyzing ./ggml/src/ggml-sycl/conv.cpp
+Analyzing ./ggml/src/ggml-sycl/convert.cpp
+Analyzing ./ggml/src/ggml-sycl/cpy.cpp
+Analyzing ./ggml/src/ggml-sycl/dmmv.cpp
+Analyzing ./ggml/src/ggml-sycl/element_wise.cpp
+Analyzing ./ggml/src/ggml-sycl/getrows.cpp
+Analyzing ./ggml/src/ggml-sycl/ggml-sycl.cpp
+Analyzing ./ggml/src/ggml-sycl/gla.cpp
+Analyzing ./ggml/src/ggml-sycl/im2col.cpp
+Analyzing ./ggml/src/ggml-sycl/mmq.cpp
+Analyzing ./ggml/src/ggml-sycl/mmvq.cpp
+Analyzing ./ggml/src/ggml-sycl/norm.cpp
+Analyzing ./ggml/src/ggml-sycl/outprod.cpp
+Analyzing ./ggml/src/ggml-sycl/rope.cpp
+Analyzing ./ggml/src/ggml-sycl/set_rows.cpp
+Analyzing ./ggml/src/ggml-sycl/softmax.cpp
+Analyzing ./ggml/src/ggml-sycl/sycl_hw.cpp
+Analyzing ./ggml/src/ggml-sycl/tsembd.cpp
+Analyzing ./ggml/src/ggml-sycl/wkv.cpp
+Analyzing ./ggml/src/ggml-threading.cpp
+Analyzing ./ggml/src/ggml-vulkan/ggml-vulkan.cpp
+Analyzing ./ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp
+Analyzing ./ggml/src/ggml-webgpu/ggml-webgpu.cpp
+Analyzing ./ggml/src/ggml-zdnn/ggml-zdnn.cpp
+Analyzing ./ggml/src/ggml-zdnn/mmf.cpp
+Analyzing ./ggml/src/ggml-zdnn/utils.cpp
+Analyzing ./ggml/src/ggml.c
+Analyzing ./ggml/src/ggml.cpp
+Analyzing ./ggml/src/gguf.cpp
+Analyzing ./ggml/tests/test-arange.cpp
+Analyzing ./ggml/tests/test-backend-ops.cpp
+Analyzing ./ggml/tests/test-cont.c
+Analyzing ./ggml/tests/test-conv-transpose-1d.cpp
+Analyzing ./ggml/tests/test-conv-transpose.c
+Analyzing ./ggml/tests/test-conv1d-dw-c1.cpp
+Analyzing ./ggml/tests/test-conv1d-dw-c2.cpp
+Analyzing ./ggml/tests/test-conv1d.cpp
+Analyzing ./ggml/tests/test-conv2d-dw.cpp
+Analyzing ./ggml/tests/test-conv2d.cpp
+Analyzing ./ggml/tests/test-customop.c
+Analyzing ./ggml/tests/test-dup.c
+Analyzing ./ggml/tests/test-interpolate.cpp
+Analyzing ./ggml/tests/test-opt.cpp
+Analyzing ./ggml/tests/test-pad-reflect-1d.cpp
+Analyzing ./ggml/tests/test-pool.c
+Analyzing ./ggml/tests/test-quantize-fns.cpp
+Analyzing ./ggml/tests/test-quantize-perf.cpp
+Analyzing ./ggml/tests/test-rel-pos.c
+Analyzing ./ggml/tests/test-roll.cpp
+Analyzing ./ggml/tests/test-timestep_embedding.cpp
+./ggml/examples/sam/sam.cpp:338: High: printf
+./ggml/tests/test-backend-ops.cpp:692: High: printf
+./ggml/tests/test-opt.cpp:175: High: printf
+./ggml/tests/test-opt.cpp:266: High: printf
+Check to be sure that the non-constant format string passed as argument 1 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./ggml/examples/yolo/yolov3-tiny.cpp:123: High: fixed size local buffer
+./ggml/examples/yolo/yolov3-tiny.cpp:159: High: fixed size local buffer
+./ggml/src/ggml-backend.cpp:834: High: fixed size local buffer
+./ggml/src/ggml-cann/aclnn_ops.cpp:3328: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/loongarch/quants.c:1571: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/loongarch/quants.c:1575: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp:127: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/cpu-feats.cpp:171: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/quants.c:2505: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/quants.c:2509: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/quants.c:2622: High: fixed size local buffer
+./ggml/src/ggml-cpu/arch/x86/quants.c:2626: High: fixed size local buffer
+./ggml/src/ggml-cpu/ggml-cpu.c:602: High: fixed size local buffer
+./ggml/src/ggml-cpu/ggml-cpu.c:668: High: fixed size local buffer
+./ggml/src/ggml-cpu/ggml-cpu.c:1525: High: fixed size local buffer
+./ggml/src/ggml-cpu/ggml-cpu.cpp:288: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1157: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1670: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1671: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1706: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1707: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1708: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1709: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1744: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1745: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1773: High: fixed size local buffer
+./ggml/src/ggml-cpu/llamafile/sgemm.cpp:1774: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:61: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:62: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:85: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:86: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:112: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:113: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:129: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:130: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:146: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:147: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:163: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:164: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:182: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:183: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:240: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:241: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:274: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:275: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:305: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:306: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:338: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:339: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:355: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:356: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:378: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:379: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:418: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:419: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:442: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:443: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:478: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:479: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:651: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:652: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:672: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:673: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:705: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:706: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:875: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:876: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:896: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:897: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:931: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:932: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:990: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:991: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1046: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1047: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1076: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1077: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1112: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1113: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1135: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1136: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1158: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1159: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1201: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1202: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1241: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1242: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1266: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1267: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1285: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1286: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1304: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1305: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1323: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1324: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1342: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1343: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1361: High: fixed size local buffer
+./ggml/src/ggml-metal/ggml-metal-device.cpp:1362: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:136: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:179: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:514: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2002: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2003: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2014: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2015: High: fixed size local buffer
+./ggml/src/ggml-opencl/ggml-opencl.cpp:4122: High: fixed size local buffer
+./ggml/src/ggml-rpc/ggml-rpc.cpp:84: High: fixed size local buffer
+./ggml/src/ggml-rpc/ggml-rpc.cpp:86: High: fixed size local buffer
+./ggml/src/ggml-rpc/ggml-rpc.cpp:1099: High: fixed size local buffer
+./ggml/src/ggml-rpc/ggml-rpc.cpp:1115: High: fixed size local buffer
+./ggml/src/ggml-sycl/ggml-sycl.cpp:262: High: fixed size local buffer
+./ggml/src/ggml-sycl/ggml-sycl.cpp:851: High: fixed size local buffer
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:12468: High: fixed size local buffer
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:12959: High: fixed size local buffer
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:13220: High: fixed size local buffer
+./ggml/src/ggml.c:166: High: fixed size local buffer
+./ggml/src/ggml.c:217: High: fixed size local buffer
+./ggml/src/ggml.c:254: High: fixed size local buffer
+./ggml/src/ggml.c:895: High: fixed size local buffer
+./ggml/src/ggml.c:6922: High: fixed size local buffer
+./ggml/src/ggml.c:7022: High: fixed size local buffer
+./ggml/src/ggml.c:7034: High: fixed size local buffer
+./ggml/tests/test-backend-ops.cpp:389: High: fixed size local buffer
+./ggml/tests/test-backend-ops.cpp:417: High: fixed size local buffer
+./ggml/tests/test-backend-ops.cpp:802: High: fixed size local buffer
+Extra care should be taken to ensure that character arrays that are allocated
+on the stack are used safely.  They are prime targets for buffer overflow
+attacks.
+
+./ggml/src/ggml-backend-reg.cpp:120: High: LoadLibraryW
+LoadLibrary will search several places for a library if
+no path is specified, allowing trojan DLL's to be inserted elsewhere even
+if the intended DLL is correctly protected from overwriting. Make sure to specify the full path.
+
+./ggml/src/ggml-backend-reg.cpp:604: High: getenv
+./ggml/src/ggml-backend.cpp:1615: High: getenv
+./ggml/src/ggml-cann/ggml-cann.cpp:103: High: getenv
+./ggml/src/ggml-cann/ggml-cann.cpp:1643: High: getenv
+./ggml/src/ggml-cann/ggml-cann.cpp:2809: High: getenv
+./ggml/src/ggml-cpu/ggml-cpu.c:3563: High: getenv
+./ggml/src/ggml-cpu/kleidiai/kleidiai.cpp:61: High: getenv
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2075: High: getenv
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2076: High: getenv
+./ggml/src/ggml-opencl/ggml-opencl.cpp:2414: High: getenv
+./ggml/src/ggml-rpc/ggml-rpc.cpp:34: High: getenv
+./ggml/src/ggml-sycl/common.cpp:23: High: getenv
+./ggml/src/ggml-sycl/ggml-sycl.cpp:180: High: getenv
+./ggml/src/ggml-sycl/ggml-sycl.cpp:4129: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3727: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3730: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3733: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3736: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3768: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3776: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3781: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3786: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3849: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3859: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:3896: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4043: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4258: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4357: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4366: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4368: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4408: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4413: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4418: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4423: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4431: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4570: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4621: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4629: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4790: High: getenv
+./ggml/src/ggml-vulkan/ggml-vulkan.cpp:4792: High: getenv
+./ggml/src/ggml.c:134: High: getenv
+./ggml/src/ggml.cpp:17: High: getenv
+Environment variables are highly untrustable input. They may be of any length, and contain any data. Do not make any assumptions regarding content or length. If at all possible avoid using them, and if it is necessary, sanitize them and truncate them to a reasonable length.
+
+./ggml/src/ggml-opt.cpp:280: High: strcpy
+Check to be sure that argument 2 passed to this function call will not copy
+more data than can be handled, resulting in a buffer overflow.
+
+./ggml/src/ggml-opt.cpp:986: High: fprintf
+./ggml/src/ggml-opt.cpp:1058: High: fprintf
+./ggml/src/ggml-opt.cpp:1072: High: fprintf
+./ggml/src/ggml.c:6963: High: fprintf
+./ggml/src/ggml.c:6965: High: fprintf
+./ggml/src/ggml.c:6991: High: fprintf
+Check to be sure that the non-constant format string passed as argument 2 to
+this function call does not come from an untrusted source that could have added
+formatting characters that the code is not prepared to handle.
+
+./ggml/src/ggml-rpc/ggml-rpc.cpp:279: High: gethostbyname
+DNS results can easily be forged by an attacker (or 
+arbitrarily set to large values, etc), and should not be trusted.
+
+./ggml/examples/common-ggml.cpp:101: Medium: read
+./ggml/examples/common-ggml.cpp:102: Medium: read
+./ggml/examples/common-ggml.cpp:103: Medium: read
+./ggml/examples/common-ggml.cpp:112: Medium: read
+./ggml/examples/common-ggml.cpp:117: Medium: read
+./ggml/examples/common-ggml.cpp:150: Medium: read
+./ggml/examples/common-ggml.cpp:157: Medium: read
+./ggml/examples/common-ggml.cpp:165: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:91: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:102: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:103: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:104: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:105: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:106: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:107: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:125: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:138: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:141: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:317: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:318: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:319: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:328: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:333: Medium: read
+./ggml/examples/gpt-2/main-alloc.cpp:365: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:115: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:126: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:127: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:128: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:129: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:130: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:131: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:149: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:162: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:165: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:365: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:366: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:367: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:376: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:381: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:416: Medium: read
+./ggml/examples/gpt-2/main-backend.cpp:420: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:162: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:173: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:174: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:175: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:176: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:177: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:178: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:196: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:209: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:212: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:449: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:450: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:451: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:460: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:465: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:506: Medium: read
+./ggml/examples/gpt-2/main-batched.cpp:510: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:88: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:99: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:100: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:101: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:102: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:103: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:104: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:122: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:135: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:138: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:314: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:315: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:316: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:325: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:330: Medium: read
+./ggml/examples/gpt-2/main-ctx.cpp:362: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:167: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:178: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:179: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:180: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:181: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:182: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:183: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:201: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:214: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:217: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:434: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:435: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:436: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:445: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:450: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:495: Medium: read
+./ggml/examples/gpt-2/main-sched.cpp:499: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:47: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:60: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:61: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:62: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:63: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:64: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:65: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:91: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:103: Medium: read
+./ggml/examples/gpt-2/quantize.cpp:107: Medium: read
+./ggml/examples/gpt-j/main.cpp:89: Medium: read
+./ggml/examples/gpt-j/main.cpp:100: Medium: read
+./ggml/examples/gpt-j/main.cpp:101: Medium: read
+./ggml/examples/gpt-j/main.cpp:102: Medium: read
+./ggml/examples/gpt-j/main.cpp:103: Medium: read
+./ggml/examples/gpt-j/main.cpp:104: Medium: read
+./ggml/examples/gpt-j/main.cpp:105: Medium: read
+./ggml/examples/gpt-j/main.cpp:106: Medium: read
+./ggml/examples/gpt-j/main.cpp:125: Medium: read
+./ggml/examples/gpt-j/main.cpp:138: Medium: read
+./ggml/examples/gpt-j/main.cpp:141: Medium: read
+./ggml/examples/gpt-j/main.cpp:310: Medium: read
+./ggml/examples/gpt-j/main.cpp:311: Medium: read
+./ggml/examples/gpt-j/main.cpp:312: Medium: read
+./ggml/examples/gpt-j/main.cpp:321: Medium: read
+./ggml/examples/gpt-j/main.cpp:326: Medium: read
+./ggml/examples/gpt-j/main.cpp:358: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:48: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:61: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:62: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:63: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:64: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:65: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:66: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:67: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:94: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:106: Medium: read
+./ggml/examples/gpt-j/quantize.cpp:110: Medium: read
+./ggml/examples/mnist/mnist-common.cpp:32: Medium: read
+./ggml/examples/mnist/mnist-common.cpp:75: Medium: read
+./ggml/examples/mnist/mnist-common.cpp:489: Medium: read
+./ggml/examples/sam/sam.cpp:520: Medium: read
+./ggml/examples/sam/sam.cpp:539: Medium: read
+./ggml/examples/sam/sam.cpp:540: Medium: read
+./ggml/examples/sam/sam.cpp:541: Medium: read
+./ggml/examples/sam/sam.cpp:542: Medium: read
+./ggml/examples/sam/sam.cpp:543: Medium: read
+./ggml/examples/sam/sam.cpp:544: Medium: read
+./ggml/examples/sam/sam.cpp:1045: Medium: read
+./ggml/examples/sam/sam.cpp:1046: Medium: read
+./ggml/examples/sam/sam.cpp:1047: Medium: read
+./ggml/examples/sam/sam.cpp:1057: Medium: read
+./ggml/examples/sam/sam.cpp:1063: Medium: read
+./ggml/examples/sam/sam.cpp:1107: Medium: read
+./ggml/src/ggml-opencl/ggml-opencl.cpp:647: Medium: read
+./ggml/src/ggml-rpc/ggml-rpc.cpp:1126: Medium: read
+./ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp:156: Medium: read
+./ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp:160: Medium: read
+./ggml/src/ggml.c:170: Medium: read
+./ggml/src/gguf.cpp:225: Medium: read
+./ggml/src/gguf.cpp:230: Medium: read
+./ggml/src/gguf.cpp:235: Medium: read
+./ggml/src/gguf.cpp:240: Medium: read
+./ggml/src/gguf.cpp:248: Medium: read
+./ggml/src/gguf.cpp:250: Medium: read
+./ggml/src/gguf.cpp:257: Medium: read
+./ggml/src/gguf.cpp:259: Medium: read
+./ggml/src/gguf.cpp:266: Medium: read
+./ggml/src/gguf.cpp:268: Medium: read
+./ggml/src/gguf.cpp:275: Medium: read
+./ggml/src/gguf.cpp:277: Medium: read
+./ggml/src/gguf.cpp:284: Medium: read
+./ggml/src/gguf.cpp:298: Medium: read
+./ggml/src/gguf.cpp:311: Medium: read
+./ggml/src/gguf.cpp:328: Medium: read
+./ggml/src/gguf.cpp:353: Medium: read
+./ggml/src/gguf.cpp:384: Medium: read
+./ggml/src/gguf.cpp:395: Medium: read
+./ggml/src/gguf.cpp:421: Medium: read
+./ggml/src/gguf.cpp:439: Medium: read
+./ggml/src/gguf.cpp:442: Medium: read
+./ggml/src/gguf.cpp:443: Medium: read
+./ggml/src/gguf.cpp:496: Medium: read
+./ggml/src/gguf.cpp:527: Medium: read
+./ggml/src/gguf.cpp:537: Medium: read
+./ggml/src/gguf.cpp:567: Medium: read
+./ggml/src/gguf.cpp:600: Medium: read
+./ggml/src/gguf.cpp:684: Medium: read
+Check buffer boundaries if calling this function in a loop 
+and make sure you are not in danger of writing past the allocated space.
+
+./ggml/examples/gpt-2/main-ctx.cpp:418: Medium: realloc
+./ggml/examples/gpt-j/main.cpp:415: Medium: realloc
+./ggml/src/ggml-alloc.c:1082: Medium: realloc
+./ggml/src/ggml-backend.cpp:1205: Medium: realloc
+./ggml/src/ggml-backend.cpp:1294: Medium: realloc
+./ggml/src/ggml-backend.cpp:1295: Medium: realloc
+./ggml/src/ggml-cann/ggml-cann.cpp:1175: Medium: realloc
+./ggml/src/ggml-cann/ggml-cann.cpp:1220: Medium: realloc
+Don't use on memory intended to be secure, because the old structure will not be zeroed out.
+
+./ggml/examples/mnist/mnist-common.cpp:485: Medium: srand
+./ggml/examples/mnist/mnist-eval.cpp:20: Medium: srand
+Standard random number generators should not be used to 
+generate randomness used for security reasons.  For security sensitive 
+randomness a crytographic randomness generator that provides sufficient
+entropy should be used.
+
+./ggml/src/ggml-vulkan/vulkan-shaders/vulkan-shaders-gen.cpp:173: Medium: stat
+A potential TOCTOU (Time Of Check, Time Of Use) vulnerability exists.  This is
+the first line where a check has occured.
+The following line(s) contain uses that may match up with this check:
+183 (mkdir)
+
+Total lines analyzed: 154671
+Total time 0.137372 seconds
+1125928 lines per second
