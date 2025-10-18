@@ -1,0 +1,51 @@
+digraph "a-new_test.c.016t.cfg" {
+overlap=false;
+subgraph "cluster_main" {
+	style="dashed";
+	color="black";
+	label="main ()";
+	fn_0_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_0_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_0_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 2\>:\l\
+|[c_files/new_test.c:6:9]\ y\ =\ 3;\l\
+|[c_files/new_test.c:7:9]\ x\ =\ 10;\l\
+|[c_files/new_test.c:8:7]\ if\ (y\ \>\ 0)\l\
+\ \ goto\ \<bb\ 3\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 4\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 3\>:\l\
+|[c_files/new_test.c:10:11]\ x\ =\ 1;\l\
+|[c_files/new_test.c:11:11]\ y\ =\ 2;\l\
+[0:0]\ goto\ \<bb\ 5\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 4\>:\l\
+|[c_files/new_test.c:15:11]\ z\ =\ x;\l\
+|[c_files/new_test.c:16:11]\ x\ =\ 4;\l\
+}"];
+
+	fn_0_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 5\>:\l\
+|[c_files/new_test.c:18:7]\ z\ =\ y;\l\
+|[c_files/new_test.c:19:7]\ x\ =\ z;\l\
+|[\<built-in\>:0:0]\ D.3280\ =\ 0;\l\
+}"];
+
+	fn_0_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 6\>:\l\
+|\<L3\>:\l\
+|[\<built-in\>:0:0\ discrim\ 1]\ return\ D.3280;\l\
+}"];
+
+	fn_0_basic_block_0:s -> fn_0_basic_block_2:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_3:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_4:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_3:s -> fn_0_basic_block_5:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_4:s -> fn_0_basic_block_5:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_5:s -> fn_0_basic_block_6:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_6:s -> fn_0_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_0:s -> fn_0_basic_block_1:n [style="invis",constraint=true];
+}
+}

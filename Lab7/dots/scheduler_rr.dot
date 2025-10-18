@@ -1,0 +1,478 @@
+digraph "a-scheduler_rr.c.016t.cfg" {
+overlap=false;
+subgraph "cluster_main" {
+	style="dashed";
+	color="black";
+	label="main ()";
+	subgraph cluster_6_3 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 3";
+	labeljust=l;
+	penwidth=2;
+	fn_6_basic_block_41 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 41\>:\l\
+|[c_files/scheduler_rr.c:172:19\ discrim\ 1]\ n_processes.7_54\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:172:19\ discrim\ 1]\ if\ (i\ \<\ n_processes.7_54)\l\
+\ \ goto\ \<bb\ 40\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 42\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_40 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 40\>:\l\
+|[c_files/scheduler_rr.c:173:9]\ _48\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:179:25]\ processes[i].waiting_time;\l\
+|[c_files/scheduler_rr.c:173:9]\ _49\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:178:25]\ processes[i].turnaround_time;\l\
+|[c_files/scheduler_rr.c:173:9]\ _50\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:177:25]\ processes[i].completion_time;\l\
+|[c_files/scheduler_rr.c:173:9]\ _51\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:176:25]\ processes[i].burst_time;\l\
+|[c_files/scheduler_rr.c:173:9]\ _52\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:175:25]\ processes[i].arrival_time;\l\
+|[c_files/scheduler_rr.c:173:9]\ _53\ =\ [c_files/scheduler_rr.c:173:9]\ [c_files/scheduler_rr.c:174:25]\ processes[i].pid;\l\
+|[c_files/scheduler_rr.c:173:9]\ printf\ ([c_files/scheduler_rr.c:173:16]\ \"%d\\t%d\\t\\t%d\\t\\t%d\\t\\t%d\\t\\t\\t%d\\n\",\ _53,\ _52,\ _51,\ _50,\ _49,\ _48);\l\
+|[c_files/scheduler_rr.c:172:35\ discrim\ 3]\ i\ =\ i\ +\ 1;\l\
+}"];
+
+	}
+	subgraph cluster_6_2 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 2";
+	labeljust=l;
+	penwidth=2;
+	subgraph cluster_6_5 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey77";
+	label="loop 5";
+	labeljust=l;
+	penwidth=2;
+	fn_6_basic_block_26 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 26\>:\l\
+|[c_files/scheduler_rr.c:108:26\ discrim\ 1]\ n_processes.5_24\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:108:26\ discrim\ 1]\ if\ (i\ \<\ n_processes.5_24)\l\
+\ \ goto\ \<bb\ 23\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 27\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_23 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 23\>:\l\
+|[c_files/scheduler_rr.c:109:32]\ _23\ =\ [c_files/scheduler_rr.c:109:32]\ [c_files/scheduler_rr.c:109:29]\ processes[i].pid;\l\
+|[c_files/scheduler_rr.c:109:19]\ if\ (active_process_pid\ ==\ _23)\l\
+\ \ goto\ \<bb\ 24\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 25\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_25 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 25\>:\l\
+|[c_files/scheduler_rr.c:108:42\ discrim\ 2]\ i\ =\ i\ +\ 1;\l\
+}"];
+
+	}
+	subgraph cluster_6_4 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey77";
+	label="loop 4";
+	labeljust=l;
+	penwidth=2;
+	fn_6_basic_block_15 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 15\>:\l\
+|[c_files/scheduler_rr.c:77:23\ discrim\ 1]\ n_processes.4_19\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:77:23\ discrim\ 1]\ if\ (i\ \<\ n_processes.4_19)\l\
+\ \ goto\ \<bb\ 10\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 16\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_10 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 10\>:\l\
+|[c_files/scheduler_rr.c:78:29]\ _16\ =\ [c_files/scheduler_rr.c:78:29]\ [c_files/scheduler_rr.c:78:26]\ processes[i].arrival_time;\l\
+|[c_files/scheduler_rr.c:78:16]\ if\ (current_time\ ==\ _16)\l\
+\ \ goto\ \<bb\ 11\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 14\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_11 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 11\>:\l\
+|[c_files/scheduler_rr.c:80:20]\ if\ (front\ ==\ -1)\l\
+\ \ goto\ \<bb\ 12\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 13\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_14 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 14\>:\l\
+|[c_files/scheduler_rr.c:77:39\ discrim\ 2]\ i\ =\ i\ +\ 1;\l\
+}"];
+
+	fn_6_basic_block_12 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 12\>:\l\
+|[c_files/scheduler_rr.c:81:27]\ front\ =\ 0;\l\
+}"];
+
+	fn_6_basic_block_13 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 13\>:\l\
+|[c_files/scheduler_rr.c:83:30]\ _17\ =\ rear\ +\ 1;\l\
+|[c_files/scheduler_rr.c:83:22]\ rear\ =\ _17\ %\ 10;\l\
+|[c_files/scheduler_rr.c:84:35]\ [c_files/scheduler_rr.c:84:28]\ ready_queue[rear]\ =\ i;\l\
+|[c_files/scheduler_rr.c:85:45]\ [c_files/scheduler_rr.c:85:29]\ [c_files/scheduler_rr.c:85:26]\ processes[i].in_ready_queue\ =\ 1;\l\
+|[c_files/scheduler_rr.c:86:17]\ _18\ =\ [c_files/scheduler_rr.c:86:17]\ [c_files/scheduler_rr.c:86:106]\ processes[i].pid;\l\
+|[c_files/scheduler_rr.c:86:17]\ printf\ ([c_files/scheduler_rr.c:86:24]\ \"Time\ %d:\ Process\ %d\ arrived\ and\ added\ to\ ready\ queue.\\n\",\ current_time,\ _18);\l\
+}"];
+
+	}
+	fn_6_basic_block_38 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 38\>:\l\
+|[c_files/scheduler_rr.c:74:32]\ n_processes.6_47\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:74:32]\ if\ (completed_processes\ \<\ n_processes.6_47)\l\
+\ \ goto\ \<bb\ 9\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 39\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_9 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 9\>:\l\
+|[c_files/scheduler_rr.c:77:16]\ i\ =\ 0;\l\
+[c_files/scheduler_rr.c:77:9]\ goto\ \<bb\ 15\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_16 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 16\>:\l\
+|[c_files/scheduler_rr.c:92:12]\ if\ (active_process_pid\ ==\ -1)\l\
+\ \ goto\ \<bb\ 17\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 21\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_17 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 17\>:\l\
+|[c_files/scheduler_rr.c:92:38\ discrim\ 1]\ if\ (front\ !=\ -1)\l\
+\ \ goto\ \<bb\ 18\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 21\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_21 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 21\>:\l\
+|[c_files/scheduler_rr.c:105:12]\ if\ (active_process_pid\ !=\ -1)\l\
+\ \ goto\ \<bb\ 22\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 36\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_18 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 18\>:\l\
+|[c_files/scheduler_rr.c:93:17]\ process_index\ =\ [c_files/scheduler_rr.c:93:44]\ ready_queue[front];\l\
+|[c_files/scheduler_rr.c:94:28]\ _20\ =\ front\ +\ 1;\l\
+|[c_files/scheduler_rr.c:94:19]\ front\ =\ _20\ %\ 10;\l\
+|[c_files/scheduler_rr.c:95:32]\ _21\ =\ rear\ +\ 1;\l\
+|[c_files/scheduler_rr.c:95:37]\ _22\ =\ _21\ %\ 10;\l\
+|[c_files/scheduler_rr.c:95:16]\ if\ (front\ ==\ _22)\l\
+\ \ goto\ \<bb\ 19\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 20\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_22 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 22\>:\l\
+|[c_files/scheduler_rr.c:106:17]\ current_process_index\ =\ -1;\l\
+|[c_files/scheduler_rr.c:108:19]\ i\ =\ 0;\l\
+[c_files/scheduler_rr.c:108:13]\ goto\ \<bb\ 26\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_36 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 36\>:\l\
+|[c_files/scheduler_rr.c:158:14]\ printf\ ([c_files/scheduler_rr.c:158:21]\ \"Time\ %d:\ CPU\ is\ idle,\ no\ processes\ in\ ready\ queue.\\n\",\ current_time);\l\
+}"];
+
+	fn_6_basic_block_19 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 19\>:\l\
+|[c_files/scheduler_rr.c:96:23]\ front\ =\ -1;\l\
+|[c_files/scheduler_rr.c:97:22]\ rear\ =\ -1;\l\
+}"];
+
+	fn_6_basic_block_20 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 20\>:\l\
+|[c_files/scheduler_rr.c:99:32]\ active_process_pid\ =\ [c_files/scheduler_rr.c:99:58]\ [c_files/scheduler_rr.c:99:43]\ processes[process_index].pid;\l\
+|[c_files/scheduler_rr.c:100:35]\ current_quantum_slice\ =\ 0;\l\
+|[c_files/scheduler_rr.c:101:13]\ printf\ ([c_files/scheduler_rr.c:101:20]\ \"Time\ %d:\ CPU\ is\ idle.\ Dispatching\ Process\ %d\ from\ ready\ queue.\\n\",\ current_time,\ active_process_pid);\l\
+}"];
+
+	fn_6_basic_block_37 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 37\>:\l\
+|[c_files/scheduler_rr.c:162:21]\ current_time\ =\ current_time\ +\ 1;\l\
+}"];
+
+	fn_6_basic_block_27 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 27\>:\l\
+|[c_files/scheduler_rr.c:116:45]\ _25\ =\ [c_files/scheduler_rr.c:116:45]\ [c_files/scheduler_rr.c:116:22]\ processes[current_process_index].remaining_time;\l\
+|[c_files/scheduler_rr.c:116:60]\ _26\ =\ _25\ +\ -1;\l\
+|[c_files/scheduler_rr.c:116:60]\ [c_files/scheduler_rr.c:116:45]\ [c_files/scheduler_rr.c:116:22]\ processes[current_process_index].remaining_time\ =\ _26;\l\
+|[c_files/scheduler_rr.c:117:34]\ current_quantum_slice\ =\ current_quantum_slice\ +\ 1;\l\
+|[c_files/scheduler_rr.c:118:13]\ _27\ =\ [c_files/scheduler_rr.c:118:13]\ [c_files/scheduler_rr.c:118:121]\ processes[current_process_index].remaining_time;\l\
+|[c_files/scheduler_rr.c:118:13]\ printf\ ([c_files/scheduler_rr.c:118:20]\ \"Time\ %d:\ Process\ %d\ is\ running.\ (Remaining\ Time:\ %d)\\n\",\ current_time,\ active_process_pid,\ _27);\l\
+|[c_files/scheduler_rr.c:121:49]\ _28\ =\ [c_files/scheduler_rr.c:121:49]\ [c_files/scheduler_rr.c:121:26]\ processes[current_process_index].remaining_time;\l\
+|[c_files/scheduler_rr.c:121:16]\ if\ (_28\ ==\ 0)\l\
+\ \ goto\ \<bb\ 28\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 29\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_24 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 24\>:\l\
+|[c_files/scheduler_rr.c:110:43]\ current_process_index\ =\ i;\l\
+[c_files/scheduler_rr.c:111:21]\ goto\ \<bb\ 27\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_28 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 28\>:\l\
+|[c_files/scheduler_rr.c:122:81]\ _29\ =\ current_time\ +\ 1;\l\
+|[c_files/scheduler_rr.c:122:66]\ [c_files/scheduler_rr.c:122:49]\ [c_files/scheduler_rr.c:122:26]\ processes[current_process_index].completion_time\ =\ _29;\l\
+|[c_files/scheduler_rr.c:123:100]\ _30\ =\ [c_files/scheduler_rr.c:123:100]\ [c_files/scheduler_rr.c:123:77]\ processes[current_process_index].completion_time;\l\
+|[c_files/scheduler_rr.c:123:151]\ _31\ =\ [c_files/scheduler_rr.c:123:151]\ [c_files/scheduler_rr.c:123:128]\ processes[current_process_index].arrival_time;\l\
+|[c_files/scheduler_rr.c:123:117]\ _32\ =\ _30\ -\ _31;\l\
+|[c_files/scheduler_rr.c:123:66]\ [c_files/scheduler_rr.c:123:49]\ [c_files/scheduler_rr.c:123:26]\ processes[current_process_index].turnaround_time\ =\ _32;\l\
+|[c_files/scheduler_rr.c:124:97]\ _33\ =\ [c_files/scheduler_rr.c:124:97]\ [c_files/scheduler_rr.c:124:74]\ processes[current_process_index].turnaround_time;\l\
+|[c_files/scheduler_rr.c:124:148]\ _34\ =\ [c_files/scheduler_rr.c:124:148]\ [c_files/scheduler_rr.c:124:125]\ processes[current_process_index].burst_time;\l\
+|[c_files/scheduler_rr.c:124:114]\ _35\ =\ _33\ -\ _34;\l\
+|[c_files/scheduler_rr.c:124:63]\ [c_files/scheduler_rr.c:124:49]\ [c_files/scheduler_rr.c:124:26]\ processes[current_process_index].waiting_time\ =\ _35;\l\
+|[c_files/scheduler_rr.c:126:71]\ _36\ =\ [c_files/scheduler_rr.c:126:71]\ [c_files/scheduler_rr.c:126:48]\ processes[current_process_index].waiting_time;\l\
+|[c_files/scheduler_rr.c:126:36]\ _37\ =\ (float)\ _36;\l\
+|[c_files/scheduler_rr.c:126:36]\ total_waiting_time\ =\ total_waiting_time\ +\ _37;\l\
+|[c_files/scheduler_rr.c:127:74]\ _38\ =\ [c_files/scheduler_rr.c:127:74]\ [c_files/scheduler_rr.c:127:51]\ processes[current_process_index].turnaround_time;\l\
+|[c_files/scheduler_rr.c:127:39]\ _39\ =\ (float)\ _38;\l\
+|[c_files/scheduler_rr.c:127:39]\ total_turnaround_time\ =\ total_turnaround_time\ +\ _39;\l\
+|[c_files/scheduler_rr.c:129:36]\ completed_processes\ =\ completed_processes\ +\ 1;\l\
+|[c_files/scheduler_rr.c:130:17]\ _40\ =\ [c_files/scheduler_rr.c:130:17]\ [c_files/scheduler_rr.c:130:184]\ processes[current_process_index].waiting_time;\l\
+|[c_files/scheduler_rr.c:130:17]\ _41\ =\ [c_files/scheduler_rr.c:130:17]\ [c_files/scheduler_rr.c:130:134]\ processes[current_process_index].turnaround_time;\l\
+|[c_files/scheduler_rr.c:130:17]\ _42\ =\ current_time\ +\ 1;\l\
+|[c_files/scheduler_rr.c:130:17]\ printf\ ([c_files/scheduler_rr.c:130:24]\ \"Time\ %d:\ Process\ %d\ FINISHED.\ Turnaround:\ %d,\ Waiting:\ %d\\n\",\ _42,\ active_process_pid,\ _41,\ _40);\l\
+|[c_files/scheduler_rr.c:131:36]\ active_process_pid\ =\ -1;\l\
+|[c_files/scheduler_rr.c:132:39]\ current_quantum_slice\ =\ 0;\l\
+[0:0]\ goto\ \<bb\ 37\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_29 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 29\>:\l\
+|[c_files/scheduler_rr.c:136:21]\ if\ (current_quantum_slice\ ==\ 4)\l\
+\ \ goto\ \<bb\ 30\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 37\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_30 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 30\>:\l\
+|[c_files/scheduler_rr.c:137:17]\ _43\ =\ current_time\ +\ 1;\l\
+|[c_files/scheduler_rr.c:137:17]\ printf\ ([c_files/scheduler_rr.c:137:24]\ \"Time\ %d:\ Time\ quantum\ expired\ for\ Process\ %d.\\n\",\ _43,\ active_process_pid);\l\
+|[c_files/scheduler_rr.c:141:20]\ if\ (front\ !=\ -1)\l\
+\ \ goto\ \<bb\ 31\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 34\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_31 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 31\>:\l\
+|[c_files/scheduler_rr.c:142:24]\ if\ (front\ ==\ -1)\l\
+\ \ goto\ \<bb\ 32\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 33\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_34 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 34\>:\l\
+|[c_files/scheduler_rr.c:150:22]\ _46\ =\ current_time\ +\ 1;\l\
+|[c_files/scheduler_rr.c:150:22]\ printf\ ([c_files/scheduler_rr.c:150:29]\ \"Time\ %d:\ No\ other\ processes\ in\ queue.\ Process\ %d\ continues.\\n\",\ _46,\ active_process_pid);\l\
+}"];
+
+	fn_6_basic_block_32 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 32\>:\l\
+|[c_files/scheduler_rr.c:143:31]\ front\ =\ 0;\l\
+}"];
+
+	fn_6_basic_block_33 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 33\>:\l\
+|[c_files/scheduler_rr.c:145:34]\ _44\ =\ rear\ +\ 1;\l\
+|[c_files/scheduler_rr.c:145:26]\ rear\ =\ _44\ %\ 10;\l\
+|[c_files/scheduler_rr.c:146:39]\ [c_files/scheduler_rr.c:146:32]\ ready_queue[rear]\ =\ current_process_index;\l\
+|[c_files/scheduler_rr.c:147:21]\ _45\ =\ current_time\ +\ 1;\l\
+|[c_files/scheduler_rr.c:147:21]\ printf\ ([c_files/scheduler_rr.c:147:28]\ \"Time\ %d:\ Process\ %d\ moved\ to\ the\ back\ of\ the\ ready\ queue.\\n\",\ _45,\ active_process_pid);\l\
+[0:0]\ goto\ \<bb\ 35\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_35 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 35\>:\l\
+|[c_files/scheduler_rr.c:154:36]\ active_process_pid\ =\ -1;\l\
+|[c_files/scheduler_rr.c:155:39]\ current_quantum_slice\ =\ 0;\l\
+goto\ \<bb\ 37\>;\ [INV]\l\
+}"];
+
+	}
+	subgraph cluster_6_1 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 1";
+	labeljust=l;
+	penwidth=2;
+	fn_6_basic_block_7 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 7\>:\l\
+|[c_files/scheduler_rr.c:55:19\ discrim\ 1]\ n_processes.3_15\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:55:19\ discrim\ 1]\ if\ (i\ \<\ n_processes.3_15)\l\
+\ \ goto\ \<bb\ 6\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 8\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 6\>:\l\
+|[c_files/scheduler_rr.c:56:30]\ _6\ =\ i\ +\ 1;\l\
+|[c_files/scheduler_rr.c:56:26]\ [c_files/scheduler_rr.c:56:21]\ [c_files/scheduler_rr.c:56:18]\ processes[i].pid\ =\ _6;\l\
+|[c_files/scheduler_rr.c:58:36]\ _7\ =\ rand\ ();\l\
+|[c_files/scheduler_rr.c:58:43\ discrim\ 1]\ _8\ =\ _7\ %\ 10;\l\
+|[c_files/scheduler_rr.c:58:49\ discrim\ 1]\ _9\ =\ _8\ +\ 3;\l\
+|[c_files/scheduler_rr.c:58:33\ discrim\ 1]\ [c_files/scheduler_rr.c:58:21]\ [c_files/scheduler_rr.c:58:18]\ processes[i].burst_time\ =\ _9;\l\
+|[c_files/scheduler_rr.c:59:51]\ _10\ =\ [c_files/scheduler_rr.c:59:51]\ [c_files/scheduler_rr.c:59:48]\ processes[i].burst_time;\l\
+|[c_files/scheduler_rr.c:59:37]\ [c_files/scheduler_rr.c:59:21]\ [c_files/scheduler_rr.c:59:18]\ processes[i].remaining_time\ =\ _10;\l\
+|[c_files/scheduler_rr.c:60:39]\ _11\ =\ i\ *\ 2;\l\
+|[c_files/scheduler_rr.c:60:35]\ [c_files/scheduler_rr.c:60:21]\ [c_files/scheduler_rr.c:60:18]\ processes[i].arrival_time\ =\ _11;\l\
+|[c_files/scheduler_rr.c:61:35]\ [c_files/scheduler_rr.c:61:21]\ [c_files/scheduler_rr.c:61:18]\ processes[i].waiting_time\ =\ 0;\l\
+|[c_files/scheduler_rr.c:62:38]\ [c_files/scheduler_rr.c:62:21]\ [c_files/scheduler_rr.c:62:18]\ processes[i].turnaround_time\ =\ 0;\l\
+|[c_files/scheduler_rr.c:63:37]\ [c_files/scheduler_rr.c:63:21]\ [c_files/scheduler_rr.c:63:18]\ processes[i].in_ready_queue\ =\ 0;\l\
+|[c_files/scheduler_rr.c:64:38]\ [c_files/scheduler_rr.c:64:21]\ [c_files/scheduler_rr.c:64:18]\ processes[i].completion_time\ =\ 0;\l\
+|[c_files/scheduler_rr.c:65:9]\ _12\ =\ [c_files/scheduler_rr.c:65:9]\ [c_files/scheduler_rr.c:65:88]\ processes[i].burst_time;\l\
+|[c_files/scheduler_rr.c:65:9]\ _13\ =\ [c_files/scheduler_rr.c:65:9]\ [c_files/scheduler_rr.c:65:61]\ processes[i].arrival_time;\l\
+|[c_files/scheduler_rr.c:65:9]\ _14\ =\ [c_files/scheduler_rr.c:65:9]\ [c_files/scheduler_rr.c:65:43]\ processes[i].pid;\l\
+|[c_files/scheduler_rr.c:65:9]\ printf\ ([c_files/scheduler_rr.c:65:16]\ \"%d\\t%d\\t\\t%d\\n\",\ _14,\ _13,\ _12);\l\
+|[c_files/scheduler_rr.c:55:35\ discrim\ 3]\ i\ =\ i\ +\ 1;\l\
+}"];
+
+	}
+	fn_6_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_6_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_6_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 2\>:\l\
+|[c_files/scheduler_rr.c:28:9]\ front\ =\ -1;\l\
+|[c_files/scheduler_rr.c:28:21]\ rear\ =\ -1;\l\
+|[c_files/scheduler_rr.c:29:9]\ current_time\ =\ 0;\l\
+|[c_files/scheduler_rr.c:30:9]\ completed_processes\ =\ 0;\l\
+|[c_files/scheduler_rr.c:31:11]\ total_waiting_time\ =\ 0.0;\l\
+|[c_files/scheduler_rr.c:32:11]\ total_turnaround_time\ =\ 0.0;\l\
+|[c_files/scheduler_rr.c:33:9]\ active_process_pid\ =\ -1;\l\
+|[c_files/scheduler_rr.c:34:9]\ current_quantum_slice\ =\ 0;\l\
+|[c_files/scheduler_rr.c:37:11]\ _1\ =\ time\ (0B);\l\
+|[c_files/scheduler_rr.c:37:5\ discrim\ 1]\ _2\ =\ (unsigned\ int)\ _1;\l\
+|[c_files/scheduler_rr.c:37:5\ discrim\ 1]\ srand\ (_2);\l\
+|[c_files/scheduler_rr.c:40:5]\ __builtin_puts\ (&\"---\ Round\ Robin\ CPU\ Scheduler\ Simulator\ ---\"[0]);\l\
+|[c_files/scheduler_rr.c:41:5]\ printf\ ([c_files/scheduler_rr.c:41:12]\ \"Enter\ the\ number\ of\ processes\ to\ simulate\ (1\ to\ %d):\ \",\ 10);\l\
+|[c_files/scheduler_rr.c:42:5]\ scanf\ ([c_files/scheduler_rr.c:42:11]\ \"%d\",\ [c_files/scheduler_rr.c:42:5]\ &n_processes);\l\
+|[c_files/scheduler_rr.c:44:21]\ n_processes.0_3\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:44:8]\ if\ (n_processes.0_3\ \<=\ 0)\l\
+\ \ goto\ \<bb\ 4\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 3\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 3\>:\l\
+|[c_files/scheduler_rr.c:44:40\ discrim\ 1]\ n_processes.1_4\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:44:25\ discrim\ 1]\ if\ (n_processes.1_4\ \>\ 10)\l\
+\ \ goto\ \<bb\ 4\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 5\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 4\>:\l\
+|[c_files/scheduler_rr.c:45:9]\ __builtin_puts\ (&\"Invalid\ number\ of\ processes.\ Exiting.\"[0]);\l\
+|[c_files/scheduler_rr.c:46:16]\ D.4026\ =\ 1;\l\
+|[c_files/scheduler_rr.c:46:16]\ //\ predicted\ unlikely\ by\ early\ return\ (on\ trees)\ predictor.\l\
+[c_files/scheduler_rr.c:46:16]\ goto\ \<bb\ 43\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 5\>:\l\
+|[c_files/scheduler_rr.c:51:5]\ n_processes.2_5\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:51:5]\ printf\ ([c_files/scheduler_rr.c:51:12]\ \"\\nInitializing\ %d\ processes...\\n\",\ n_processes.2_5);\l\
+|[c_files/scheduler_rr.c:52:5]\ __builtin_puts\ (&\"--------------------------------------------------\"[0]);\l\
+|[c_files/scheduler_rr.c:53:5]\ __builtin_puts\ (&\"PID\\tArrival\ Time\\tBurst\ Time\"[0]);\l\
+|[c_files/scheduler_rr.c:54:5]\ __builtin_puts\ (&\"--------------------------------------------------\"[0]);\l\
+|[c_files/scheduler_rr.c:55:12]\ i\ =\ 0;\l\
+[c_files/scheduler_rr.c:55:5]\ goto\ \<bb\ 7\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_8 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 8\>:\l\
+|[c_files/scheduler_rr.c:67:5]\ __builtin_puts\ (&\"--------------------------------------------------\\n\"[0]);\l\
+|[c_files/scheduler_rr.c:68:5]\ printf\ ([c_files/scheduler_rr.c:68:12]\ \"Simulation\ starting...\ Time\ Quantum\ =\ %d\\n\\n\",\ 4);\l\
+[c_files/scheduler_rr.c:74:11]\ goto\ \<bb\ 38\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_39 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 39\>:\l\
+|[c_files/scheduler_rr.c:166:5]\ __builtin_puts\ (&\"\\n\\n---\ Simulation\ Complete\ ---\"[0]);\l\
+|[c_files/scheduler_rr.c:167:5]\ __builtin_puts\ (&\"Final\ Results:\"[0]);\l\
+|[c_files/scheduler_rr.c:168:5]\ __builtin_puts\ (&\"------------------------------------------------------------------------------------------\"[0]);\l\
+|[c_files/scheduler_rr.c:169:5]\ __builtin_puts\ (&\"PID\\tArrival\ Time\\tBurst\ Time\\tCompletion\ Time\\tTurnaround\ Time\\tWaiting\ Time\"[0]);\l\
+|[c_files/scheduler_rr.c:170:5]\ __builtin_puts\ (&\"------------------------------------------------------------------------------------------\"[0]);\l\
+|[c_files/scheduler_rr.c:172:12]\ i\ =\ 0;\l\
+[c_files/scheduler_rr.c:172:5]\ goto\ \<bb\ 41\>;\ [INV]\l\
+}"];
+
+	fn_6_basic_block_42 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 42\>:\l\
+|[c_files/scheduler_rr.c:181:5]\ __builtin_puts\ (&\"------------------------------------------------------------------------------------------\"[0]);\l\
+|[c_files/scheduler_rr.c:184:49]\ n_processes.8_55\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:184:49]\ _56\ =\ (float)\ n_processes.8_55;\l\
+|[c_files/scheduler_rr.c:184:11]\ avg_waiting_time\ =\ total_waiting_time\ /\ _56;\l\
+|[c_files/scheduler_rr.c:185:55]\ n_processes.9_57\ =\ n_processes;\l\
+|[c_files/scheduler_rr.c:185:55]\ _58\ =\ (float)\ n_processes.9_57;\l\
+|[c_files/scheduler_rr.c:185:11]\ avg_turnaround_time\ =\ total_turnaround_time\ /\ _58;\l\
+|[c_files/scheduler_rr.c:187:5]\ _59\ =\ (double)\ avg_waiting_time;\l\
+|[c_files/scheduler_rr.c:187:5]\ printf\ ([c_files/scheduler_rr.c:187:12]\ \"\\nAverage\ Waiting\ Time:\ \ \ \ %.2f\\n\",\ _59);\l\
+|[c_files/scheduler_rr.c:188:5]\ _60\ =\ (double)\ avg_turnaround_time;\l\
+|[c_files/scheduler_rr.c:188:5]\ printf\ ([c_files/scheduler_rr.c:188:12]\ \"Average\ Turnaround\ Time:\ %.2f\\n\",\ _60);\l\
+|[c_files/scheduler_rr.c:189:5]\ printf\ ([c_files/scheduler_rr.c:189:12]\ \"Total\ time\ elapsed:\ %d\\n\",\ current_time);\l\
+|[c_files/scheduler_rr.c:191:12]\ D.4026\ =\ 0;\l\
+}"];
+
+	fn_6_basic_block_43 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 43\>:\l\
+|n_processes\ =\ \{CLOBBER(eos)\};\l\
+|processes\ =\ \{CLOBBER(eos)\};\l\
+|ready_queue\ =\ \{CLOBBER(eos)\};\l\
+}"];
+
+	fn_6_basic_block_44 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 44\>:\l\
+|\<L44\>:\l\
+|return\ D.4026;\l\
+}"];
+
+	fn_6_basic_block_0:s -> fn_6_basic_block_2:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_2:s -> fn_6_basic_block_4:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_2:s -> fn_6_basic_block_3:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_3:s -> fn_6_basic_block_4:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_3:s -> fn_6_basic_block_5:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_4:s -> fn_6_basic_block_43:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_5:s -> fn_6_basic_block_7:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_6:s -> fn_6_basic_block_7:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_6_basic_block_7:s -> fn_6_basic_block_6:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_7:s -> fn_6_basic_block_8:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_8:s -> fn_6_basic_block_38:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_9:s -> fn_6_basic_block_15:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_10:s -> fn_6_basic_block_11:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_10:s -> fn_6_basic_block_14:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_11:s -> fn_6_basic_block_12:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_11:s -> fn_6_basic_block_13:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_12:s -> fn_6_basic_block_13:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_13:s -> fn_6_basic_block_14:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_14:s -> fn_6_basic_block_15:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_6_basic_block_15:s -> fn_6_basic_block_10:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_15:s -> fn_6_basic_block_16:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_16:s -> fn_6_basic_block_17:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_16:s -> fn_6_basic_block_21:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_17:s -> fn_6_basic_block_18:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_17:s -> fn_6_basic_block_21:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_18:s -> fn_6_basic_block_19:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_18:s -> fn_6_basic_block_20:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_19:s -> fn_6_basic_block_20:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_20:s -> fn_6_basic_block_21:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_21:s -> fn_6_basic_block_22:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_21:s -> fn_6_basic_block_36:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_22:s -> fn_6_basic_block_26:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_23:s -> fn_6_basic_block_24:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_23:s -> fn_6_basic_block_25:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_24:s -> fn_6_basic_block_27:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_25:s -> fn_6_basic_block_26:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_6_basic_block_26:s -> fn_6_basic_block_23:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_26:s -> fn_6_basic_block_27:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_27:s -> fn_6_basic_block_28:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_27:s -> fn_6_basic_block_29:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_28:s -> fn_6_basic_block_37:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_29:s -> fn_6_basic_block_30:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_29:s -> fn_6_basic_block_37:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_30:s -> fn_6_basic_block_31:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_30:s -> fn_6_basic_block_34:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_31:s -> fn_6_basic_block_32:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_31:s -> fn_6_basic_block_33:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_32:s -> fn_6_basic_block_33:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_33:s -> fn_6_basic_block_35:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_34:s -> fn_6_basic_block_35:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_35:s -> fn_6_basic_block_37:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_36:s -> fn_6_basic_block_37:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_37:s -> fn_6_basic_block_38:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_6_basic_block_38:s -> fn_6_basic_block_9:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_38:s -> fn_6_basic_block_39:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_39:s -> fn_6_basic_block_41:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_40:s -> fn_6_basic_block_41:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_6_basic_block_41:s -> fn_6_basic_block_40:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_6_basic_block_41:s -> fn_6_basic_block_42:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_6_basic_block_42:s -> fn_6_basic_block_43:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_43:s -> fn_6_basic_block_44:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_6_basic_block_44:s -> fn_6_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_6_basic_block_0:s -> fn_6_basic_block_1:n [style="invis",constraint=true];
+}
+}
