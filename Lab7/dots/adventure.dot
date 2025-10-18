@@ -1,0 +1,686 @@
+digraph "a-adventure.c.016t.cfg" {
+overlap=false;
+subgraph "cluster_main" {
+	style="dashed";
+	color="black";
+	label="main ()";
+	subgraph cluster_0_1 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 1";
+	labeljust=l;
+	penwidth=2;
+	fn_0_basic_block_81 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 81\>:\l\
+|[c_files/adventure.c:33:12]\ if\ (game_is_running\ !=\ 0)\l\
+\ \ goto\ \<bb\ 3\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 82\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 3\>:\l\
+|[c_files/adventure.c:35:12]\ if\ (player_location\ ==\ 0)\l\
+\ \ goto\ \<bb\ 4\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 10\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 4\>:\l\
+|[c_files/adventure.c:36:13]\ __builtin_puts\ (&\"\\n---\ You\ are\ in\ the\ Library\ ---\"[0]);\l\
+|[c_files/adventure.c:37:13]\ __builtin_puts\ (&\"A\ grand\ room\ filled\ with\ towering\ bookshelves.\ A\ large\ **desk**\ sits\ in\ the\ center.\"[0]);\l\
+|[c_files/adventure.c:38:13]\ __builtin_puts\ (&\"To\ the\ north\ is\ a\ heavy\ **door**.\ A\ dim\ **lamp**\ provides\ the\ only\ light.\"[0]);\l\
+|[c_files/adventure.c:39:15]\ if\ (has_book\ !=\ 0)\l\
+\ \ goto\ \<bb\ 5\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 6\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_10 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 10\>:\l\
+|[c_files/adventure.c:49:14]\ __builtin_puts\ (&\"\\n---\ You\ are\ in\ the\ Hallway\ ---\"[0]);\l\
+|[c_files/adventure.c:50:14]\ __builtin_puts\ (&\"You\\'ve\ unlocked\ the\ door\ and\ stepped\ into\ a\ long,\ dark\ hallway.\ You\ are\ free!\"[0]);\l\
+|[c_files/adventure.c:51:30]\ game_is_running\ =\ 0;\l\
+|[c_files/adventure.c:35:12\ discrim\ 1]\ //\ predicted\ unlikely\ by\ continue\ predictor.\l\
+[c_files/adventure.c:52:14]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 5\>:\l\
+|[c_files/adventure.c:40:17]\ __builtin_puts\ (&\"You\ are\ holding\ a\ heavy\ leather-bound\ book.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 6\>:\l\
+|[c_files/adventure.c:42:15]\ if\ (has_note\ !=\ 0)\l\
+\ \ goto\ \<bb\ 7\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 8\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_7 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 7\>:\l\
+|[c_files/adventure.c:43:17]\ __builtin_puts\ (&\"You\ have\ a\ crumpled\ note\ in\ your\ pocket.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_8 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 8\>:\l\
+|[c_files/adventure.c:45:15]\ if\ (has_key\ !=\ 0)\l\
+\ \ goto\ \<bb\ 9\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 11\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_9 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 9\>:\l\
+|[c_files/adventure.c:46:17]\ __builtin_puts\ (&\"You\ are\ holding\ a\ small,\ ornate\ brass\ key.\"[0]);\l\
+goto\ \<bb\ 11\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_11 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 11\>:\l\
+|[c_files/adventure.c:57:9]\ printf\ ([c_files/adventure.c:57:16]\ \"\\n\>\ \");\l\
+|[c_files/adventure.c:59:13]\ stdin.0_1\ =\ stdin;\l\
+|[c_files/adventure.c:59:13]\ _2\ =\ fgets\ ([c_files/adventure.c:59:13]\ &player_input,\ 100,\ stdin.0_1);\l\
+|[c_files/adventure.c:59:12\ discrim\ 1]\ if\ (_2\ !=\ 0B)\l\
+\ \ goto\ \<bb\ 12\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 13\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_12 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 12\>:\l\
+|[c_files/adventure.c:61:26]\ _3\ =\ strcspn\ ([c_files/adventure.c:61:26]\ &player_input,\ [c_files/adventure.c:61:26]\ \"\\n\");\l\
+|[c_files/adventure.c:61:55\ discrim\ 1]\ [c_files/adventure.c:61:25]\ player_input[_3]\ =\ 0;\l\
+[0:0]\ goto\ \<bb\ 14\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_14 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 14\>:\l\
+|[c_files/adventure.c:72:13]\ _4\ =\ strcmp\ ([c_files/adventure.c:72:13]\ &player_input,\ [c_files/adventure.c:72:13]\ \"look\");\l\
+|[c_files/adventure.c:72:12\ discrim\ 1]\ if\ (_4\ ==\ 0)\l\
+\ \ goto\ \<bb\ 15\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 16\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_15 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 15\>:\l\
+|[c_files/adventure.c:73:13]\ __builtin_puts\ (&\"You\ are\ in\ a\ large\ library.\ There\ is\ a\ desk,\ bookshelves,\ a\ door,\ and\ a\ lamp.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_16 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 16\>:\l\
+|[c_files/adventure.c:74:20]\ _5\ =\ strcmp\ ([c_files/adventure.c:74:20]\ &player_input,\ [c_files/adventure.c:74:20]\ \"look\ desk\");\l\
+|[c_files/adventure.c:74:19\ discrim\ 1]\ if\ (_5\ ==\ 0)\l\
+\ \ goto\ \<bb\ 17\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 24\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_17 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 17\>:\l\
+|[c_files/adventure.c:75:13]\ __builtin_puts\ (&\"The\ desk\ is\ made\ of\ dark\ mahogany.\ It\ has\ a\ single\ drawer\ and\ a\ small,\ locked\ **safe**\ built\ into\ its\ side.\"[0]);\l\
+|[c_files/adventure.c:76:16]\ if\ (desk_drawer_open\ !=\ 0)\l\
+\ \ goto\ \<bb\ 18\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 20\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_24 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 24\>:\l\
+|[c_files/adventure.c:83:20]\ _6\ =\ strcmp\ ([c_files/adventure.c:83:20]\ &player_input,\ [c_files/adventure.c:83:20]\ \"look\ bookshelves\");\l\
+|[c_files/adventure.c:83:19\ discrim\ 1]\ if\ (_6\ ==\ 0)\l\
+\ \ goto\ \<bb\ 25\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 26\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_18 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 18\>:\l\
+|[c_files/adventure.c:76:34\ discrim\ 1]\ if\ (has_note\ ==\ 0)\l\
+\ \ goto\ \<bb\ 19\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 20\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_20 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 20\>:\l\
+|[c_files/adventure.c:78:23]\ if\ (desk_drawer_open\ !=\ 0)\l\
+\ \ goto\ \<bb\ 21\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 22\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_25 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 25\>:\l\
+|[c_files/adventure.c:84:13]\ __builtin_puts\ (&\"Rows\ upon\ rows\ of\ books,\ most\ covered\ in\ a\ thick\ layer\ of\ dust.\ One\ **book**\ with\ a\ red\ cover\ seems\ out\ of\ place.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_26 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 26\>:\l\
+|[c_files/adventure.c:85:20]\ _7\ =\ strcmp\ ([c_files/adventure.c:85:20]\ &player_input,\ [c_files/adventure.c:85:20]\ \"look\ door\");\l\
+|[c_files/adventure.c:85:19\ discrim\ 1]\ if\ (_7\ ==\ 0)\l\
+\ \ goto\ \<bb\ 27\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 28\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_19 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 19\>:\l\
+|[c_files/adventure.c:77:17]\ __builtin_puts\ (&\"The\ drawer\ is\ open.\ Inside\ is\ a\ crumpled\ **note**.\"[0]);\l\
+[c_files/adventure.c:77:17]\ goto\ \<bb\ 23\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_21 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 21\>:\l\
+|[c_files/adventure.c:79:17]\ __builtin_puts\ (&\"The\ drawer\ is\ open\ and\ empty.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 23\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_22 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 22\>:\l\
+|[c_files/adventure.c:81:18]\ __builtin_puts\ (&\"The\ drawer\ is\ closed.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_27 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 27\>:\l\
+|[c_files/adventure.c:86:13]\ __builtin_puts\ (&\"A\ heavy\ oak\ door.\ It\ is\ firmly\ locked.\ It\ has\ a\ brass\ keyhole.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_28 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 28\>:\l\
+|[c_files/adventure.c:87:20]\ _8\ =\ strcmp\ ([c_files/adventure.c:87:20]\ &player_input,\ [c_files/adventure.c:87:20]\ \"look\ lamp\");\l\
+|[c_files/adventure.c:87:19\ discrim\ 1]\ if\ (_8\ ==\ 0)\l\
+\ \ goto\ \<bb\ 29\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 32\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_23 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 23\>:\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_29 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 29\>:\l\
+|[c_files/adventure.c:88:16]\ if\ (lights_on\ !=\ 0)\l\
+\ \ goto\ \<bb\ 30\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 31\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_32 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 32\>:\l\
+|[c_files/adventure.c:93:20]\ _9\ =\ strcmp\ ([c_files/adventure.c:93:20]\ &player_input,\ [c_files/adventure.c:93:20]\ \"look\ safe\");\l\
+|[c_files/adventure.c:93:19\ discrim\ 1]\ if\ (_9\ ==\ 0)\l\
+\ \ goto\ \<bb\ 33\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 36\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_30 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 30\>:\l\
+|[c_files/adventure.c:89:18]\ __builtin_puts\ (&\"A\ simple\ desk\ lamp.\ It\\'s\ currently\ on.\ You\ could\ probably\ \\'turn\ off\ lamp\\'.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_31 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 31\>:\l\
+|[c_files/adventure.c:91:19]\ __builtin_puts\ (&\"The\ lamp\ is\ off.\ The\ room\ is\ now\ pitch\ black,\ but\ you\ see\ a\ faint\ number\ glowing\ on\ the\ safe:\ 852.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_33 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 33\>:\l\
+|[c_files/adventure.c:94:16]\ if\ (lights_on\ !=\ 0)\l\
+\ \ goto\ \<bb\ 34\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 35\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_36 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 36\>:\l\
+|[c_files/adventure.c:102:18]\ _10\ =\ strcmp\ ([c_files/adventure.c:102:18]\ &player_input,\ [c_files/adventure.c:102:18]\ \"get\ note\");\l\
+|[c_files/adventure.c:102:17\ discrim\ 1]\ if\ (_10\ ==\ 0)\l\
+\ \ goto\ \<bb\ 38\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 37\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_34 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 34\>:\l\
+|[c_files/adventure.c:95:18]\ __builtin_puts\ (&\"A\ small\ metal\ safe\ with\ a\ three-digit\ combination\ lock.\ It\\'s\ too\ bright\ to\ see\ any\ details\ on\ the\ dial.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_35 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 35\>:\l\
+|[c_files/adventure.c:97:19]\ __builtin_puts\ (&\"In\ the\ dark,\ you\ can\ clearly\ see\ glowing\ numbers\ on\ the\ dial:\ 8-5-2.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_38 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 38\>:\l\
+|[c_files/adventure.c:103:16]\ if\ (desk_drawer_open\ !=\ 0)\l\
+\ \ goto\ \<bb\ 39\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 41\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_37 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 37\>:\l\
+|[c_files/adventure.c:102:59\ discrim\ 2]\ _11\ =\ strcmp\ ([c_files/adventure.c:102:59]\ &player_input,\ [c_files/adventure.c:102:59]\ \"take\ note\");\l\
+|[c_files/adventure.c:102:56\ discrim\ 3]\ if\ (_11\ ==\ 0)\l\
+\ \ goto\ \<bb\ 38\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 43\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_39 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 39\>:\l\
+|[c_files/adventure.c:103:34\ discrim\ 1]\ if\ (has_note\ ==\ 0)\l\
+\ \ goto\ \<bb\ 40\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 41\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_41 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 41\>:\l\
+|[c_files/adventure.c:107:17]\ __builtin_puts\ (&\"There\ is\ no\ note\ here.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_43 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 43\>:\l\
+|[c_files/adventure.c:109:20]\ _12\ =\ strcmp\ ([c_files/adventure.c:109:20]\ &player_input,\ [c_files/adventure.c:109:20]\ \"get\ book\");\l\
+|[c_files/adventure.c:109:19\ discrim\ 1]\ if\ (_12\ ==\ 0)\l\
+\ \ goto\ \<bb\ 45\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 44\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_40 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 40\>:\l\
+|[c_files/adventure.c:104:17]\ __builtin_puts\ (&\"You\ take\ the\ note.\ It\ reads:\ \\'The\ answer\ reveals\ itself\ only\ in\ darkness.\\'\"[0]);\l\
+|[c_files/adventure.c:105:26]\ has_note\ =\ 1;\l\
+[c_files/adventure.c:105:26]\ goto\ \<bb\ 42\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_42 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 42\>:\l\
+[c_files/adventure.c:103:16]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_45 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 45\>:\l\
+|[c_files/adventure.c:110:16]\ if\ (has_book\ ==\ 0)\l\
+\ \ goto\ \<bb\ 46\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 47\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_44 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 44\>:\l\
+|[c_files/adventure.c:109:61\ discrim\ 2]\ _13\ =\ strcmp\ ([c_files/adventure.c:109:61]\ &player_input,\ [c_files/adventure.c:109:61]\ \"take\ book\");\l\
+|[c_files/adventure.c:109:58\ discrim\ 3]\ if\ (_13\ ==\ 0)\l\
+\ \ goto\ \<bb\ 45\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 49\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_46 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 46\>:\l\
+|[c_files/adventure.c:111:17]\ __builtin_puts\ (&\"You\ take\ the\ red\ book\ from\ the\ shelf.\ It\\'s\ titled\ \\'Principles\ of\ Locking\ Mechanisms\\'.\ It\ seems\ useless.\"[0]);\l\
+|[c_files/adventure.c:112:26]\ has_book\ =\ 1;\l\
+[0:0]\ goto\ \<bb\ 48\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_47 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 47\>:\l\
+|[c_files/adventure.c:114:17]\ __builtin_puts\ (&\"You\ already\ have\ the\ book.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_49 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 49\>:\l\
+|[c_files/adventure.c:119:18]\ _14\ =\ strcmp\ ([c_files/adventure.c:119:18]\ &player_input,\ [c_files/adventure.c:119:18]\ \"open\ drawer\");\l\
+|[c_files/adventure.c:119:17\ discrim\ 1]\ if\ (_14\ ==\ 0)\l\
+\ \ goto\ \<bb\ 50\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 53\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_48 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 48\>:\l\
+[c_files/adventure.c:110:16]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_50 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 50\>:\l\
+|[c_files/adventure.c:120:16]\ if\ (desk_drawer_open\ ==\ 0)\l\
+\ \ goto\ \<bb\ 51\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 52\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_53 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 53\>:\l\
+|[c_files/adventure.c:126:20]\ _15\ =\ strcmp\ ([c_files/adventure.c:126:20]\ &player_input,\ [c_files/adventure.c:126:20]\ \"turn\ off\ lamp\");\l\
+|[c_files/adventure.c:126:19\ discrim\ 1]\ if\ (_15\ ==\ 0)\l\
+\ \ goto\ \<bb\ 54\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 57\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_51 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 51\>:\l\
+|[c_files/adventure.c:121:17]\ __builtin_puts\ (&\"You\ open\ the\ desk\ drawer.\ You\ hear\ a\ soft\ click.\"[0]);\l\
+|[c_files/adventure.c:122:34]\ desk_drawer_open\ =\ 1;\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_52 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 52\>:\l\
+|[c_files/adventure.c:124:17]\ __builtin_puts\ (&\"The\ drawer\ is\ already\ open.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_54 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 54\>:\l\
+|[c_files/adventure.c:127:17]\ if\ (lights_on\ !=\ 0)\l\
+\ \ goto\ \<bb\ 55\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 56\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_57 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 57\>:\l\
+|[c_files/adventure.c:133:20]\ _16\ =\ strcmp\ ([c_files/adventure.c:133:20]\ &player_input,\ [c_files/adventure.c:133:20]\ \"turn\ on\ lamp\");\l\
+|[c_files/adventure.c:133:19\ discrim\ 1]\ if\ (_16\ ==\ 0)\l\
+\ \ goto\ \<bb\ 58\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 61\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_55 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 55\>:\l\
+|[c_files/adventure.c:128:18]\ __builtin_puts\ (&\"You\ switch\ off\ the\ lamp.\ The\ room\ plunges\ into\ darkness,\ unsettlingly\ quiet.\"[0]);\l\
+|[c_files/adventure.c:129:28]\ lights_on\ =\ 0;\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_56 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 56\>:\l\
+|[c_files/adventure.c:131:18]\ __builtin_puts\ (&\"The\ lamp\ is\ already\ off.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_58 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 58\>:\l\
+|[c_files/adventure.c:134:17]\ if\ (lights_on\ ==\ 0)\l\
+\ \ goto\ \<bb\ 59\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 60\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_61 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 61\>:\l\
+|[c_files/adventure.c:140:20]\ _17\ =\ strcmp\ ([c_files/adventure.c:140:20]\ &player_input,\ [c_files/adventure.c:140:20]\ \"use\ key\ on\ door\");\l\
+|[c_files/adventure.c:140:19\ discrim\ 1]\ if\ (_17\ ==\ 0)\l\
+\ \ goto\ \<bb\ 63\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 62\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_59 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 59\>:\l\
+|[c_files/adventure.c:135:18]\ __builtin_puts\ (&\"You\ switch\ the\ lamp\ back\ on.\ The\ familiar,\ dusty\ room\ reappears.\"[0]);\l\
+|[c_files/adventure.c:136:28]\ lights_on\ =\ 1;\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_60 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 60\>:\l\
+|[c_files/adventure.c:138:18]\ __builtin_puts\ (&\"The\ lamp\ is\ already\ on.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_63 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 63\>:\l\
+|[c_files/adventure.c:141:16]\ if\ (has_key\ !=\ 0)\l\
+\ \ goto\ \<bb\ 64\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 65\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_62 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 62\>:\l\
+|[c_files/adventure.c:140:68\ discrim\ 2]\ _18\ =\ strcmp\ ([c_files/adventure.c:140:68]\ &player_input,\ [c_files/adventure.c:140:68]\ \"unlock\ door\");\l\
+|[c_files/adventure.c:140:65\ discrim\ 3]\ if\ (_18\ ==\ 0)\l\
+\ \ goto\ \<bb\ 63\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 67\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_64 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 64\>:\l\
+|[c_files/adventure.c:142:17]\ __builtin_puts\ (&\"You\ insert\ the\ brass\ key\ into\ the\ lock.\ With\ a\ satisfying\ *CLUNK*,\ the\ door\ unlocks!\"[0]);\l\
+|[c_files/adventure.c:143:17]\ __builtin_puts\ (&\"You\ push\ the\ door\ open.\"[0]);\l\
+|[c_files/adventure.c:144:33]\ player_location\ =\ 1;\l\
+[0:0]\ goto\ \<bb\ 66\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_65 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 65\>:\l\
+|[c_files/adventure.c:146:17]\ __builtin_puts\ (&\"You\ don\\'t\ have\ a\ key.\"[0]);\l\
+}"];
+
+	fn_0_basic_block_67 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 67\>:\l\
+|[c_files/adventure.c:148:20]\ _19\ =\ strcmp\ ([c_files/adventure.c:148:20]\ &player_input,\ [c_files/adventure.c:148:20]\ \"open\ safe\");\l\
+|[c_files/adventure.c:148:19\ discrim\ 1]\ if\ (_19\ ==\ 0)\l\
+\ \ goto\ \<bb\ 69\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 68\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_66 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 66\>:\l\
+[c_files/adventure.c:141:16]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_69 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 69\>:\l\
+|[c_files/adventure.c:149:13]\ __builtin_puts\ (&\"You\ need\ to\ enter\ the\ combination.\ Type\ \\'enter\ code\ XXX\\'\ where\ XXX\ is\ the\ 3-digit\ number.\"[0]);\l\
+[c_files/adventure.c:149:13]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_68 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 68\>:\l\
+|[c_files/adventure.c:148:62\ discrim\ 2]\ _20\ =\ strcmp\ ([c_files/adventure.c:148:62]\ &player_input,\ [c_files/adventure.c:148:62]\ \"unlock\ safe\");\l\
+|[c_files/adventure.c:148:59\ discrim\ 3]\ if\ (_20\ ==\ 0)\l\
+\ \ goto\ \<bb\ 69\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 70\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_70 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 70\>:\l\
+|[c_files/adventure.c:150:20]\ _21\ =\ strncmp\ ([c_files/adventure.c:150:20]\ &player_input,\ [c_files/adventure.c:150:20]\ \"enter\ code\ \",\ 11);\l\
+|[c_files/adventure.c:150:19\ discrim\ 1]\ if\ (_21\ ==\ 0)\l\
+\ \ goto\ \<bb\ 71\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 76\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_71 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 71\>:\l\
+|[c_files/adventure.c:151:16]\ if\ (safe_unlocked\ !=\ 0)\l\
+\ \ goto\ \<bb\ 72\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 73\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_76 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 76\>:\l\
+|[c_files/adventure.c:163:18]\ _23\ =\ strcmp\ ([c_files/adventure.c:163:18]\ &player_input,\ [c_files/adventure.c:163:18]\ \"help\");\l\
+|[c_files/adventure.c:163:17\ discrim\ 1]\ if\ (_23\ ==\ 0)\l\
+\ \ goto\ \<bb\ 77\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 78\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_72 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 72\>:\l\
+|[c_files/adventure.c:152:17]\ __builtin_puts\ (&\"The\ safe\ is\ already\ open.\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_73 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 73\>:\l\
+|[c_files/adventure.c:153:24]\ _22\ =\ strcmp\ ([c_files/adventure.c:153:24]\ &player_input,\ [c_files/adventure.c:153:24]\ \"enter\ code\ 852\");\l\
+|[c_files/adventure.c:153:23\ discrim\ 1]\ if\ (_22\ ==\ 0)\l\
+\ \ goto\ \<bb\ 74\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 75\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_77 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 77\>:\l\
+|[c_files/adventure.c:164:13]\ __builtin_puts\ (&\"\\n---\ Available\ Commands\ ---\"[0]);\l\
+|[c_files/adventure.c:165:13]\ __builtin_puts\ (&\"Actions:\ look,\ get/take,\ open,\ use,\ enter\ code,\ turn\ on/off\"[0]);\l\
+|[c_files/adventure.c:166:13]\ __builtin_puts\ (&\"Objects:\ desk,\ bookshelves,\ door,\ lamp,\ note,\ book,\ safe,\ drawer\"[0]);\l\
+|[c_files/adventure.c:167:13]\ __builtin_puts\ (&\"Example:\ \\'look\ desk\\',\ \\'get\ note\\',\ \\'use\ key\ on\ door\\',\ \\'turn\ off\ lamp\\'\"[0]);\l\
+|[c_files/adventure.c:168:13]\ __builtin_puts\ (&\"System:\ \\'help\\',\ \\'quit\\'\"[0]);\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_78 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 78\>:\l\
+|[c_files/adventure.c:169:20]\ _24\ =\ strcmp\ ([c_files/adventure.c:169:20]\ &player_input,\ [c_files/adventure.c:169:20]\ \"quit\");\l\
+|[c_files/adventure.c:169:19\ discrim\ 1]\ if\ (_24\ ==\ 0)\l\
+\ \ goto\ \<bb\ 79\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 80\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_74 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 74\>:\l\
+|[c_files/adventure.c:154:17]\ __builtin_puts\ (&\"You\ dial\ in\ 8-5-2.\ The\ safe\ door\ swings\ open\ silently.\ Inside,\ you\ find\ a\ small\ brass\ **key**!\"[0]);\l\
+|[c_files/adventure.c:155:31]\ safe_unlocked\ =\ 1;\l\
+|[c_files/adventure.c:156:25]\ has_key\ =\ 1;\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_75 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 75\>:\l\
+|[c_files/adventure.c:158:17]\ __builtin_puts\ (&\"Incorrect\ code.\ The\ lock\ clicks\ but\ doesn\\'t\ open.\"[0]);\l\
+goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_79 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 79\>:\l\
+|[c_files/adventure.c:170:13]\ __builtin_puts\ (&\"You\ give\ up\ and\ accept\ your\ fate\ as\ a\ permanent\ resident\ of\ the\ library.\"[0]);\l\
+|[c_files/adventure.c:171:29]\ game_is_running\ =\ 0;\l\
+[0:0]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_80 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 80\>:\l\
+|[c_files/adventure.c:173:13]\ printf\ ([c_files/adventure.c:173:20]\ \"I\ don\\'t\ understand\ how\ to\ \\'%s\\'.\ Try\ something\ else.\\n\",\ [c_files/adventure.c:173:77]\ &player_input);\l\
+}"];
+
+	}
+	fn_0_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_0_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_0_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 2\>:\l\
+|[c_files/adventure.c:10:9]\ game_is_running\ =\ 1;\l\
+|[c_files/adventure.c:14:9]\ has_key\ =\ 0;\l\
+|[c_files/adventure.c:15:9]\ has_note\ =\ 0;\l\
+|[c_files/adventure.c:16:9]\ has_book\ =\ 0;\l\
+|[c_files/adventure.c:17:9]\ desk_drawer_open\ =\ 0;\l\
+|[c_files/adventure.c:18:9]\ safe_unlocked\ =\ 0;\l\
+|[c_files/adventure.c:19:9]\ lights_on\ =\ 1;\l\
+|[c_files/adventure.c:20:9]\ player_location\ =\ 0;\l\
+|[c_files/adventure.c:23:5]\ __builtin_puts\ (&\"======================================\"[0]);\l\
+|[c_files/adventure.c:24:5]\ __builtin_puts\ (&\"\ \ \ \ \ \ \ ESCAPE\ THE\ FORGOTTEN\ LIBRARY\"[0]);\l\
+|[c_files/adventure.c:25:5]\ __builtin_puts\ (&\"======================================\\n\"[0]);\l\
+|[c_files/adventure.c:26:5]\ __builtin_puts\ (&\"You\ awake\ with\ a\ start,\ your\ head\ throbbing.\ You\ are\ sitting\ in\ a\ plush\ armchair\ in\ a\ vast,\ dusty\ library.\"[0]);\l\
+|[c_files/adventure.c:27:5]\ __builtin_puts\ (&\"The\ only\ exit\ is\ a\ large\ oak\ door\ to\ the\ north,\ which\ appears\ to\ be\ locked.\"[0]);\l\
+|[c_files/adventure.c:28:5]\ __builtin_puts\ (&\"The\ air\ is\ still\ and\ silent.\ You\ need\ to\ find\ a\ way\ out.\\n\"[0]);\l\
+|[c_files/adventure.c:29:5]\ __builtin_puts\ (&\"Type\ \\'help\\'\ to\ see\ available\ commands.\\n\"[0]);\l\
+[c_files/adventure.c:33:11]\ goto\ \<bb\ 81\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_13 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 13\>:\l\
+|[c_files/adventure.c:64:13]\ __builtin_puts\ (&\"Error\ reading\ input.\ Exiting.\"[0]);\l\
+[c_files/adventure.c:65:13]\ goto\ \<bb\ 82\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_82 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 82\>:\l\
+|[c_files/adventure.c:178:5]\ __builtin_puts\ (&\"\\n======================================\"[0]);\l\
+|[c_files/adventure.c:179:5]\ __builtin_puts\ (&\"\ \ \ \ \ \ \ \ \ \ \ \ THANKS\ FOR\ PLAYING!\"[0]);\l\
+|[c_files/adventure.c:180:5]\ __builtin_puts\ (&\"======================================\"[0]);\l\
+|[c_files/adventure.c:182:12]\ D.3599\ =\ 0;\l\
+|player_input\ =\ \{CLOBBER(eos)\};\l\
+}"];
+
+	fn_0_basic_block_83 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 83\>:\l\
+|\<L106\>:\l\
+|return\ D.3599;\l\
+}"];
+
+	fn_0_basic_block_0:s -> fn_0_basic_block_2:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_81:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_3:s -> fn_0_basic_block_4:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_3:s -> fn_0_basic_block_10:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_4:s -> fn_0_basic_block_5:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_4:s -> fn_0_basic_block_6:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_5:s -> fn_0_basic_block_6:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_6:s -> fn_0_basic_block_7:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_6:s -> fn_0_basic_block_8:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_7:s -> fn_0_basic_block_8:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_8:s -> fn_0_basic_block_9:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_8:s -> fn_0_basic_block_11:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_9:s -> fn_0_basic_block_11:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_10:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_11:s -> fn_0_basic_block_12:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_11:s -> fn_0_basic_block_13:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_12:s -> fn_0_basic_block_14:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_13:s -> fn_0_basic_block_82:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_14:s -> fn_0_basic_block_15:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_14:s -> fn_0_basic_block_16:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_15:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_16:s -> fn_0_basic_block_17:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_16:s -> fn_0_basic_block_24:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_17:s -> fn_0_basic_block_18:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_17:s -> fn_0_basic_block_20:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_18:s -> fn_0_basic_block_19:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_18:s -> fn_0_basic_block_20:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_19:s -> fn_0_basic_block_23:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_20:s -> fn_0_basic_block_21:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_20:s -> fn_0_basic_block_22:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_21:s -> fn_0_basic_block_23:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_22:s -> fn_0_basic_block_23:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_23:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_24:s -> fn_0_basic_block_25:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_24:s -> fn_0_basic_block_26:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_25:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_26:s -> fn_0_basic_block_27:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_26:s -> fn_0_basic_block_28:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_27:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_28:s -> fn_0_basic_block_29:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_28:s -> fn_0_basic_block_32:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_29:s -> fn_0_basic_block_30:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_29:s -> fn_0_basic_block_31:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_30:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_31:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_32:s -> fn_0_basic_block_33:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_32:s -> fn_0_basic_block_36:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_33:s -> fn_0_basic_block_34:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_33:s -> fn_0_basic_block_35:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_34:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_35:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_36:s -> fn_0_basic_block_38:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_36:s -> fn_0_basic_block_37:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_37:s -> fn_0_basic_block_38:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_37:s -> fn_0_basic_block_43:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_38:s -> fn_0_basic_block_39:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_38:s -> fn_0_basic_block_41:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_39:s -> fn_0_basic_block_40:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_39:s -> fn_0_basic_block_41:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_40:s -> fn_0_basic_block_42:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_41:s -> fn_0_basic_block_42:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_42:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_43:s -> fn_0_basic_block_45:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_43:s -> fn_0_basic_block_44:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_44:s -> fn_0_basic_block_45:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_44:s -> fn_0_basic_block_49:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_45:s -> fn_0_basic_block_46:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_45:s -> fn_0_basic_block_47:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_46:s -> fn_0_basic_block_48:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_47:s -> fn_0_basic_block_48:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_48:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_49:s -> fn_0_basic_block_50:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_49:s -> fn_0_basic_block_53:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_50:s -> fn_0_basic_block_51:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_50:s -> fn_0_basic_block_52:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_51:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_52:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_53:s -> fn_0_basic_block_54:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_53:s -> fn_0_basic_block_57:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_54:s -> fn_0_basic_block_55:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_54:s -> fn_0_basic_block_56:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_55:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_56:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_57:s -> fn_0_basic_block_58:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_57:s -> fn_0_basic_block_61:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_58:s -> fn_0_basic_block_59:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_58:s -> fn_0_basic_block_60:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_59:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_60:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_61:s -> fn_0_basic_block_63:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_61:s -> fn_0_basic_block_62:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_62:s -> fn_0_basic_block_63:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_62:s -> fn_0_basic_block_67:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_63:s -> fn_0_basic_block_64:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_63:s -> fn_0_basic_block_65:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_64:s -> fn_0_basic_block_66:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_65:s -> fn_0_basic_block_66:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_66:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_67:s -> fn_0_basic_block_69:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_67:s -> fn_0_basic_block_68:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_68:s -> fn_0_basic_block_69:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_68:s -> fn_0_basic_block_70:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_69:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_70:s -> fn_0_basic_block_71:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_70:s -> fn_0_basic_block_76:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_71:s -> fn_0_basic_block_72:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_71:s -> fn_0_basic_block_73:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_72:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_73:s -> fn_0_basic_block_74:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_73:s -> fn_0_basic_block_75:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_74:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_75:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_76:s -> fn_0_basic_block_77:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_76:s -> fn_0_basic_block_78:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_77:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_78:s -> fn_0_basic_block_79:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_78:s -> fn_0_basic_block_80:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_79:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_80:s -> fn_0_basic_block_81:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_81:s -> fn_0_basic_block_3:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_81:s -> fn_0_basic_block_82:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_82:s -> fn_0_basic_block_83:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_83:s -> fn_0_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_0:s -> fn_0_basic_block_1:n [style="invis",constraint=true];
+}
+}
