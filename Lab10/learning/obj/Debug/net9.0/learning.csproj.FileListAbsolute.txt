@@ -1,0 +1,15 @@
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/bin/Debug/net9.0/learning
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/bin/Debug/net9.0/learning.deps.json
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/bin/Debug/net9.0/learning.runtimeconfig.json
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/bin/Debug/net9.0/learning.dll
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/bin/Debug/net9.0/learning.pdb
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.AssemblyInfoInputs.cache
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.AssemblyInfo.cs
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.csproj.CoreCompileInputs.cache
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.sourcelink.json
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.dll
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/refint/learning.dll
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.pdb
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/learning.genruntimeconfig.cache
+/mnt/Acer/Users/Haarit/Desktop/GitHubRepos/stt_labs/Lab10/learning/obj/Debug/net9.0/ref/learning.dll
