@@ -1,0 +1,16 @@
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.csproj.GenerateResource.cache
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.AssemblyInfoInputs.cache
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.AssemblyInfo.cs
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.csproj.CoreCompileInputs.cache
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\bin\Debug\net8.0-windows\EventPlayground.exe
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\bin\Debug\net8.0-windows\EventPlayground.deps.json
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\bin\Debug\net8.0-windows\EventPlayground.runtimeconfig.json
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\bin\Debug\net8.0-windows\EventPlayground.dll
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\bin\Debug\net8.0-windows\EventPlayground.pdb
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.Form1.resources
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.dll
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\refint\EventPlayground.dll
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.pdb
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\EventPlayground.genruntimeconfig.cache
+C:\Users\Haarit\source\repos\EventPlayground\EventPlayground\obj\Debug\net8.0-windows\ref\EventPlayground.dll
